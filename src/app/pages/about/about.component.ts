@@ -10,6 +10,9 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    ///servicio firebase:
+    // https://portfolio2021-14e43-default-rtdb.firebaseio.com/equipo.json
   }
 
 }
