@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './components/loading/loading.component';
 
 
 @NgModule({
@@ -20,13 +21,17 @@ import { HttpClientModule } from '@angular/common/http';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    ContactComponent
+    ContactComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
     
+  ],
+  exports:[
+    LoadingComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

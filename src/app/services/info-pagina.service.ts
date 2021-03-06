@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { InfoPagina } from '../models/info-pagina.interface';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -28,9 +29,9 @@ export class InfoPaginaService {
 
   private cargarEquipo(){
     
-   return this.http.get('https://portfolio2021-14e43-default-rtdb.firebaseio.com/equipo.json')
+   return this.http.get(`${environment.url}/equipo.json`)
    .subscribe((resp:any) => {
-      console.log("Servicio equipo ok", resp);
+      // console.log("Servicio equipo ok", resp);
       this.equipo = resp;          
     })
   }
