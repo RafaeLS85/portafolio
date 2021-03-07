@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingComponent } from 'src/app/components/loading/loading.component';
 import { ProductosService } from '../../services/productos.service';
 
 @Component({
